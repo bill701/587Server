@@ -19,5 +19,10 @@ public class LocationService implements ILocationService{
 		// TODO Auto-generated method stub
 		return null;
 	}
+	@Override
+	public int[] currentLocationUpdate(Double latitude,Double longtitude,String username){
+		//int[] contain 2 attribute,first one show if it update success,second shows if it need send notification.
+		return null;
+	}
 
 }

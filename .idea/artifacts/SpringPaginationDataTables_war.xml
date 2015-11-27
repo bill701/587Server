@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpringPaginationDataTables:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SpringPaginationDataTables.war">
+      <element id="artifact" artifact-name="SpringPaginationDataTables:war exploded" />
+    </root>
+  </artifact>
+</component>
