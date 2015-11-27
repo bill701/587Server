@@ -10,25 +10,12 @@ import com.csci587.entity.User;
 public class FriendService implements IFriendService{
 
 	@Override
-	public List<User> getFriendByUserId() {
+	public List<User> getFriendByUserId(String username) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	@Override
-	public Location getFriendLocation() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean isOnline() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean addFriend() {
+	public boolean addFriend(String username) {
 		// TODO Auto-generated method stub
 		return false;
 	}

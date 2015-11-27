@@ -8,21 +8,10 @@ import com.csci587.Interface.Service.ISummaryService;
 public class SummaryService implements ISummaryService{
 
 	@Override
-	public List<String> getSummaryForOneDay() {
+	public List<String> getSummaryForOneDay(String date,String username) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public List<String> getSummaryForCertainDay() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<String> getSummaryForCurrentMonth() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
