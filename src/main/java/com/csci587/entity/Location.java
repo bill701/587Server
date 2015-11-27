@@ -2,15 +2,16 @@ package com.csci587.entity;
 
 public class Location {
 
-	private String locationId;
+	private int locationId;
 	private double latitude;
 	private double longtitude;
 	private int radius;
 	private String locationName;
-	public String getLocationId() {
+	
+	public int getLocationId() {
 		return locationId;
 	}
-	public void setLocationId(String locationId) {
+	public void setLocationId(int locationId) {
 		this.locationId = locationId;
 	}
 	public double getLatitude() {

@@ -23,11 +23,12 @@ import com.google.gson.GsonBuilder;
 @Controller
 public class SpringMVCController {
 
-    @RequestMapping(value = "/login", method = 
-	    RequestMethod.GET)
-    public ModelAndView printWelcome(@ModelAttribute("person") Person person, BindingResult result,ModelMap model, HttpServletRequest 
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @ResponseBody
+    public String printWelcome(@ModelAttribute("person") Person person, BindingResult result,ModelMap model, HttpServletRequest 
 	    request, HttpServletResponse response) {
    
+
 	    List<String> test=new ArrayList<String>();
 	   String name ="byan@AMAZON.COM";
 	   System.out.println(name);
@@ -41,7 +42,7 @@ public class SpringMVCController {
     	
     	modelandview.addObject("group",test);
     	
-    	return modelandview;
+    	return "";
     	
 
     }

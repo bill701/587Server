@@ -1,14 +1,15 @@
 package com.csci587.entity;
 
 public class User {
-	private String id;
+	private int id;
 	private String password;
 	private String username;
 	private String email;
-	public String getId() {
+	private Activity currentActivity;
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getPassword() {

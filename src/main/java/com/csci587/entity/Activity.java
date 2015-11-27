@@ -1,28 +1,31 @@
 package com.csci587.entity;
 
-public class Activitity {
+import java.sql.Date;
 
-	private String activityId;
-	private String startTime;
-	private String endTime;
+public class Activity {
+
+	private int activityId;
+	private Date startTime;
+	private Date endTime;
 	private User user;
 	private Location location;
-	public String getActivityId() {
+	
+	public int getActivityId() {
 		return activityId;
 	}
-	public void setActivityId(String activityId) {
+	public void setActivityId(int activityId) {
 		this.activityId = activityId;
 	}
-	public String getStartTime() {
+	public Date getStartTime() {
 		return startTime;
 	}
-	public void setStartTime(String startTime) {
+	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
-	public String getEndTime() {
+	public Date getEndTime() {
 		return endTime;
 	}
-	public void setEndTime(String endTime) {
+	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 	public User getUser() {
