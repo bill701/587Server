@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface ISummaryService {
 
-	public List<String> getSummaryForOneDay();
-	public List<String> getSummaryForCertainDay();
-	public List<String> getSummaryForCurrentMonth();
+	List<String> getSummaryForOneDay(String date,String username);
+	//public List<String> getSummaryForCertainDay();
+	//public List<String> getSummaryForCurrentMonth();
 }
