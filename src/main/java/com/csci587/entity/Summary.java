@@ -1,25 +1,16 @@
 package com.csci587.entity;
 
+import java.sql.Date;
 import java.util.List;
 
 public class Summary {
 
-	private String startTime;
-	private String endTime;
+	private int summaryId;
+	private Date startTime;
+	private Date endTime;
 	private User user;
 	private List<Event> eventList;
-	public String getStartTime() {
-		return startTime;
-	}
-	public void setStartTime(String startTime) {
-		this.startTime = startTime;
-	}
-	public String getEndTime() {
-		return endTime;
-	}
-	public void setEndTime(String endTime) {
-		this.endTime = endTime;
-	}
+	
 	public User getUser() {
 		return user;
 	}

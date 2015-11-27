@@ -1,11 +1,13 @@
 package com.csci587.entity;
 
+import java.sql.Date;
+
 public class Event {
 	private Location location;
 	private int targetTime;
 	private int actualTime;
-	private String date;
-	private String EventId;
+	private Date dateTime;
+	private int EventId;
 	private User user;
 	public Location getLocation() {
 		return location;
@@ -25,16 +27,17 @@ public class Event {
 	public void setActualTime(int actualTime) {
 		this.actualTime = actualTime;
 	}
-	public String getDate() {
-		return date;
+
+	public Date getDateTime() {
+		return dateTime;
 	}
-	public void setDate(String date) {
-		this.date = date;
+	public void setDateTime(Date dateTime) {
+		this.dateTime = dateTime;
 	}
-	public String getEventId() {
+	public int getEventId() {
 		return EventId;
 	}
-	public void setEventId(String eventId) {
+	public void setEventId(int eventId) {
 		EventId = eventId;
 	}
 	public User getUser() {
